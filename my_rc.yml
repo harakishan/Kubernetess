@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: RemoteController
+metadata:
+  name: rc_first_Javaapp
+  labels: 
+    version:  v1
+spec:
+  replicas: 2
+  selector:
+    app:  javapplication
+  template:
+    metadata: 
+      labels: 
+        app:  javapplication
+    spec:
+      containers:
+        - name:  my-name
+          image:  maha4iac/mymahalogin
+          ports:  
+            - containerPort: 8080
