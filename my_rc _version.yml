@@ -5,7 +5,7 @@ metadata: # Metadata for RC
   labels: #optional
     version:  v0 #optional
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     app:  javapplication #Should be same with Pod label
     version:  v11        #Should be same with Pod label
