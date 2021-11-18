@@ -10,7 +10,7 @@ spec:
   ports:
     - port: 8080
       protocol: TCP
-      nodePort: 30001
+      nodePort: 30100
   selector:
     app:  javapplication
 
