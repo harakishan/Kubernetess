@@ -10,7 +10,8 @@ spec:
   ports:
     - port: 8080
       protocol: TCP
-      nodePort: 30100
+      nodePort: 30200
   selector:
-    app:  javapplication # Should be same with Pod name
+    app:  javapplication # Should be same with Pod label
+    version:  v11        #Should be same with Pod label
 
