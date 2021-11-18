@@ -13,5 +13,4 @@ spec:
       nodePort: 30200
   selector:
     app:  javapplication # Should be same with Pod label
-    version:  v22        #Should be same with Pod label
-
+    version:  v11        #Should be same with Pod label
