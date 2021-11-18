@@ -8,15 +8,15 @@ spec:
   replicas: 2
   selector:
     app:  javapplication #Should be same with Pod label
-    version:  v11        #Should be same with Pod label
+    version:  v22       #Should be same with Pod label
   template:
     metadata: # Metadata for POD
       labels: 
         app:  javapplication  # pod label
-        version:  v11          # pod label
+        version:  v22          # pod label
     spec:
       containers:
         - name: java-container
-          image:  maha4iac/mahaonlinestore:1
+          image:  maha4iac/mahaonlinestore:2
           ports:  
             - containerPort: 8080
