@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: # Metadata for Deployment
+  name: Deploy-javaapp
+  labels: #optional
+    version:  v000 #optional & could be any thing
+    app: zxsd  #optional & could be any thing
+spec: 
+  replicas: 2
+  selector:
+    matchLabels:  
+      app:  myjavaapp #Should be same with Pod label
+      version:  v123       #Should be same with Pod label
+  template:
+    metadata: # Metadata for POD
+      labels: 
+        app:  myjavaapp  # pod label
+        version:  v123          # pod label
+    spec:
+      containers:
+        - name: javadeploy-container
+          image:  maha4iac/mahaonlinestore:1
+          ports:  
+            - containerPort: 8080

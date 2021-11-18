@@ -1,0 +1,16 @@
+apiVersion:  v1
+kind: Service
+metadata:
+  name: deploy-service
+  labels: 
+    app:  abcd #optnal & could be any thing
+    version:  v0121 #optional & could be any thing
+spec: 
+  type: NodePort
+  ports:
+    - port: 8080
+      protocol: TCP
+      nodePort: 30150
+  selector:
+    app:  myjavaapp # Should be same with Pod label
+    version:  v123        #Should be same with Pod label
