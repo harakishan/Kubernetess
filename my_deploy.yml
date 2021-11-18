@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: # Metadata for Deployment
-  name: Deploy-javaapp
+  name: deploy-javaapp
   labels: #optional
     version:  v000 #optional & could be any thing
     app: zxsd  #optional & could be any thing
