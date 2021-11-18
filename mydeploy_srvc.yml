@@ -8,7 +8,7 @@ metadata:
 spec: 
   type: NodePort
   ports:
-    - port: 8080
+    - port: 8080     # Should match with containerPort in Deploy.yml
       protocol: TCP
       nodePort: 30150
   selector:
