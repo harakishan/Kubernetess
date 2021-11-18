@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: javadeploy-container
-          image:  maha4iac/mahaonlinestore:1
+          image:  maha4iac/mahaonlinestore:2
           ports:  
             - containerPort: 8080
