@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: javadeploy-container
-          image:  maha4iac/mahaonlinestore:2
+          image:  harasai84/onlinejavaapp:1
           ports:  
             - containerPort: 8080  # Should match with Port in Service file
